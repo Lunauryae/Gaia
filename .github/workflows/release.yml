@@ -1,0 +1,41 @@
+name: Gaia Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+    runs-on: windows-2022
+    permissions:
+      contents: write
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v5
+      with:
+        submodules: recursive
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v5
+      with:
+        dotnet-version: 9.0.x
+
+    - name: Download Dalamud
+      run: |
+        Invoke-WebRequest -Uri https://goatcorp.github.io/dalamud-distrib/latest.zip -OutFile latest.zip
+        Expand-Archive -Force latest.zip "$env:AppData\XIVLauncher\addon\Hooks\dev"
+
+    - name: Build
+      run: dotnet build --configuration Release
+
+    # Notice the Create Release Package step is completely gone!
+        
+    - name: Upload Release
+      uses: softprops/action-gh-release@v2
+      with:
+        # Flipped to forward slashes!
+        files: Gaia/bin/x64/Release/Gaia/latest.zip
+        tag_name: ${{ github.ref_name }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

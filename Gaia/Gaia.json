@@ -1,0 +1,12 @@
+{
+  "Author": "lunauryae",
+  "Name": "Gaia",
+  "InternalName": "Gaia",
+  "RepoUrl": "https://github.com/lunauryae/Gaia",
+  "Description": "Full-featured FFXIV gardening plugin with automated tending, harvesting, planting, crossbreeding optimization, and status tracking. Handles the tedious work so you can focus on the fun parts of gardening.",
+  "Punchline": "Because gardening shouldn't be a full-time job.",
+  "ApplicableVersion": "any",
+  "DalamudApiLevel": 15,
+  "Tags": [ "gardening", "utility", "automation", "crossbreeding" ],
+  "ID": "833ca8e6-16ec-4ebd-82d1-643180003d0f"
+}
