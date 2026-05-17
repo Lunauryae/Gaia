@@ -1,0 +1,55 @@
+# Build outputs
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+# IDE / Editor
+.vscode/
+.vs/
+*.user
+*.suo
+
+# Packaged releases
+latest.zip
+*.zip
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local secrets
+*.env
+appsettings.Local.json
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio 2022+ files
+.vs/
+
+# Claude Code
+CLAUDE.md
+CLAUDE_CODE_PROMPT*.md
+.claude/
+*.claude
+
+# Local maintainer notes (kept out of public docs)
+Publishing steps.md
+
+# Dalamud dev-distrib (if you download it locally)
+latest.zip
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# If you have secrets or local config
+*.config.json.local
+
+# lol?
+.gitignore
