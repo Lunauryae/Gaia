@@ -21,7 +21,7 @@ Dalamud repo for friends and the community who find it useful.
 1. Open FFXIV and type `/xlsettings`.
 2. Go to the **Experimental** tab.
 3. Scroll to **Custom Plugin Repositories**.
-4. Paste the Gaia repo URL into an empty box: `[URL TBD]`
+4. Paste the Gaia repo URL into an empty box: `https://raw.githubusercontent.com/Lunauryae/Gaia/main/repo.json`
 5. Hit **+**, make sure Enable is checked, then **Save and Close**.
 6. Open `/xlplugins`, search for **Gaia**, and install.
 7. In game, type `/gaia` to open the main window.
