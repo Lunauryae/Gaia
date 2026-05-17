@@ -2,7 +2,7 @@
 <Project Sdk="Dalamud.NET.Sdk/15.0.0">
   <PropertyGroup>
     <Version>1.0.1.0</Version>
-    <PackageProjectUrl>https://github.com/lunauryae/Gaia</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Lunauryae/Gaia</PackageProjectUrl>
     <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
     <IsPackable>false</IsPackable>
     <DebugSymbols>true</DebugSymbols>
